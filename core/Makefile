@@ -1165,6 +1165,12 @@ OTATOOLS := $(DISTTOOLS) \
 .PHONY: otatools
 otatools: $(OTATOOLS)
 
+
+UNPACKBOOTIMG :=  $(HOST_OUT_EXECUTABLES)/unpackbootimg
+
+.PHONY: unpackbootimg
+unpackbootimg: $(UNPACKBOOTIMG)
+
 # -----------------------------------------------------------------
 # A zip of the directories that map to the target filesystem.
 # This zip can be used to create an OTA package or filesystem image
