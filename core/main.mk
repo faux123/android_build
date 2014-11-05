@@ -921,6 +921,7 @@ findbugs: $(INTERNAL_FINDBUGS_HTML_TARGET) $(INTERNAL_FINDBUGS_XML_TARGET)
 .PHONY: clean
 clean:
 	@rm -rf $(OUT_DIR)
+	@./post_clean_build.sh
 	@echo "Entire build directory removed."
 
 .PHONY: clobber
